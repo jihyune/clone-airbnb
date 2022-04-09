@@ -1,0 +1,94 @@
+* {
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.corona {
+    text-decoration: underline;
+    padding: 16px 24px;
+    margin: 10px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px;
+    vertical-align: middle;
+    align-items: center;
+    margin: 10px;
+}
+
+.mypage {
+    display: flex;
+    align-items: center;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100px;
+}
+
+#lan {
+    width: 30px;
+}
+
+#my {
+    width: 50px;
+}
+
+.select {
+    justify-content: space-between;
+    padding: 0% 5px;
+}
+
+.information {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+}
+
+.location,
+.check-out,
+.check-in,
+.guests {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    width: 200px;
+    text-align: left;
+}
+.location:hover {
+    background-color: bisque;
+}
+
+.pink-banner {
+    margin: 30px auto;
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    background-color: rgb(255, 56, 92);
+    padding: 10%;
+    border-radius: 15px;
+}
+
+.specific {
+    background-color: rgb(255, 56, 92);
+    margin: 10% auto;
+    font-size: small;
+    width: 100px;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 10px;
+}
