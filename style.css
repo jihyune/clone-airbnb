@@ -18,6 +18,11 @@ body {
     background-color: black;
 }
 
+.corona:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
 .banner {
     color: white;
     background-color: black;
@@ -75,19 +80,33 @@ body {
     height: 20px;
 }
 
-.host:hover,
-.my_menu img:hover,
 .mypage:hover,
 .select:hover,
-.logo:hover,
-.specific {
+.logo:hover{
     cursor: pointer;
+}
+
+.language:hover,
+.host:hover {
+    cursor: pointer;
+    background-color: rgb(29, 28, 28);
 }
 
 .select {
     display: flex;
     width: 200px;
     justify-content: space-around;
+}
+
+#select1 {
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+#select2:hover, #select3:hover {
+    text-decoration: underline;
+    text-underline-position:under;
+    color: lightgray;
 }
 
 .information {
@@ -131,6 +150,10 @@ body {
 .item:hover {
     background-color: #eeeeee;
     cursor: pointer;
+}
+
+.search:hover {
+    background-color: #a91d4a;
 }
 
 .item:nth-child(1) {
@@ -185,6 +208,11 @@ body {
     border-radius: 10px;
 }
 
+.specific:hover {
+    cursor: pointer;
+    border: solid 2px white;
+}
+
 .text0 {
     background-color: rgb(255, 56, 92);
     width: 65%;
@@ -211,7 +239,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    font-size: 30px;
+    font-size: 45px;
     background-color: transparent;
     color: white;
 }
@@ -221,14 +249,19 @@ body {
     top: 80%;
     left: 50%;
     z-index: 1;
-    padding: 15px 20px;
+    padding: 19px 35px;
     margin-top: auto;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
     background-color: transparent;
     transform: translate(-50%, -50%);
     background-color: white;
-    color: violet;
+    color: rgb(130, 22, 130);
     border-radius: 50px;
+}
+
+.text2:hover{
+    cursor: pointer;
 }
 
 input {
@@ -290,6 +323,10 @@ h2 {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+h2 {
+    font-size: 39px;
 }
 
 .inner-seoul {
@@ -388,11 +425,7 @@ div.exp-button {
     font-size: 16px;
 }
 
-div.exp-button:hover {
-    cursor: pointer;
-}
-
-.host {
+.host-bottom {
     position: relative;
     text-align: center;
     margin-top: 2.5%;
@@ -407,8 +440,8 @@ div.exp-button:hover {
 .host-button {
     position: absolute;
     top: 80.5%;
-    left: 9.8%;
-    width: 15%;
+    left: 9,8%;
+    width: 14.8%;
     height: 7.3%;
     border-radius: 4px;
     background: white;
@@ -417,7 +450,8 @@ div.exp-button:hover {
     border-width: 0px;
 }
 
-.host-button:hover {
+.host-button:hover,
+div.exp-button:hover {
     background-color: #d3d3d3;
     cursor: pointer;
 }
