@@ -374,3 +374,133 @@ div.exp-button {
 div.exp-button:hover {
     cursor: pointer;
 }
+
+.host {
+    position: relative;
+    text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.host-image {
+    border-radius: 12px;
+    width: 90%;
+}
+
+.host-button {
+    position: absolute;
+    top: 80.5%;
+    left: 9.8%;
+    width: 15%;
+    height: 7.3%;
+    border-radius: 4px;
+    background: white;
+    font-size: 1vw;
+    padding: 0;
+    border-width: 0px;
+}
+
+.host-button:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+@font-face {
+    font-family: "MinSans-Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Bold.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+    background-color: #f7f7f7;
+    margin: auto 0;
+}
+
+.urls {
+    text-align: left;
+    margin-top: 2.5%;
+    padding-top: 2.5%;
+    font-size: 80%;
+}
+
+.urls-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 150%;
+    padding-bottom: 2.5%;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 13.5px;
+}
+
+th {
+    height: 30px;
+    font-family: "MinSans-Bold";
+}
+
+.urls-table-body {
+    height: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.urls-table-body td {
+    width: 22.5%;
+    height: 30px;
+}
+
+.urls-table-body-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copyright {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+    justify-content: space-between;
+}
+
+.copyright-table {
+    font-size: 14.5px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.copyright-table .copyright-table-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hyperlink {
+    display: flex;
+    gap: 2.5%;
+}
+
+#dummy {
+    width: 72%;
+}
+
+.universal {
+    width: 105%;
+    height: auto;
+}
+
+.universal:hover {
+    cursor: pointer;
+}
+
+.sns {
+    width: 105%;
+    height: auto;
+}
+
+.sns:hover {
+    cursor: pointer;
+}
