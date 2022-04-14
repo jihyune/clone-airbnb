@@ -1,16 +1,410 @@
-.host{
+header {
+    background-color: black;
+    color: white;
+    padding-bottom: 5%;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.corona {
+    text-decoration: underline;
+    padding: 16px 24px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.banner {
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px;
+    vertical-align: middle;
+    align-items: center;
+    margin: 0 5%;
+    width: 90%;
+}
+
+.my_menu,
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.my_menu {
+    justify-content: space-between;
+    width: 200px;
+}
+
+.banner img {
+    width: 30px;
+}
+
+.mypage {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 70px;
+    height: 40px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.mypage img {
+    border-radius: 0px;
+}
+
+.my_menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.host:hover,
+.my_menu img:hover,
+.mypage:hover,
+.select:hover,
+.logo:hover,
+.specific {
+    cursor: pointer;
+}
+
+.select {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.information {
+    display: flex;
+    margin: 0px 20%;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.item {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    border-radius: 50px;
+    text-align: left;
+    padding: 2% 2%;
+    justify-content: center;
+    text-align: left;
+}
+
+.location,
+.check-in,
+.check-out,
+.guests {
+    text-align: left;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+.when,
+.plus {
+    text-align: left;
+    background-color: transparent;
+    color: grey;
+}
+
+.item:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.item:nth-child(1) {
+    flex-grow: 1;
+}
+.item:nth-child(2) {
+    flex-grow: 1;
+}
+.item:nth-child(3) {
+    flex-grow: 1;
+}
+.item:nth-child(4) {
+    flex-grow: 2;
+}
+
+.location {
+    padding-left: 3%;
+    border-right: grey;
+}
+
+.black-background {
+    background-color: black;
+}
+
+.pink-banner {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 5%;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(255, 56, 92);
+    padding: 5% 0%;
+    border-radius: 15px;
+    font-size: 52px;
+    font-weight: bold;
+    color: white;
+}
+
+.tent {
+    height: 100vh;
+    background: linear-gradient(black 50%, white 50%);
+}
+
+.specific {
+    background-color: transparent;
+    margin: 20px auto;
+    font-size: small;
+    width: 100px;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+.text0 {
+    background-color: rgb(255, 56, 92);
+    width: 65%;
+    padding: 0% 17.5%;
+}
+
+.flexible-search {
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.tent img {
+    margin: 2% 5%;
+    width: 90%;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.text1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+.text2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: 1;
+    padding: 15px 20px;
+    margin-top: auto;
+    font-size: 15px;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: violet;
+    border-radius: 50px;
+}
+
+input {
+    background-color: transparent;
+    color: grey;
+    text-align: left;
+    border-style: none;
+}
+
+.search {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 56, 92);
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+}
+
+.information img {
+    width: 20px;
+    height: 20px;
+}
+
+.idea,
+.look-around {
+    margin: 60px 5%;
+    width: 90%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 25px;
+    padding-bottom: 24px;
+}
+
+.idea-card,
+.look-around-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.city-card {
+    height: 420px;
+    width: 23.5%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.city-card :hover {
+    cursor: pointer;
+}
+
+.city-image {
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.inner-seoul {
+    background-color: #d93b30;
+    color: #ffffff;
+    height: 50%;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.inner-incheon {
+    background-color: #bc1a6e;
+    color: #ffffff;
+    height: 50%;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.inner-daegu {
+    background-color: #de3151;
+    color: #ffffff;
+    height: 50%;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.inner-daejeon {
+    background-color: #cc2d4a;
+    color: #ffffff;
+    height: 50%;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.inner-content {
+    padding: 20px 16px 16px;
+}
+
+.city-name {
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.city-distance {
+    font-size: 15px;
+}
+
+.while-travel {
+    background: url("https://a0.muscache.com/im/pictures/3290306e-8e26-4c77-a96a-777e554c5222.jpg?im_w=320");
+    background-size: cover;
+    height: 500px;
+    width: 49%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.at-home {
+    background: url("https://a0.muscache.com/im/pictures/0fa7e0a7-c3c2-410a-b5c0-567cfca193cb.jpg?im_w=320");
+    background-size: cover;
+    height: 500px;
+    width: 49%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.look-around-card-inner {
+    margin: 25px;
+}
+
+span.while-travel,
+span.at-home {
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 20px;
+    height: min-content;
+    width: max-content;
+    background: none;
+}
+
+div.exp-button {
+    background-color: white;
+    color: black;
+    height: min-content;
+    width: max-content;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.exp-button:hover {
+    cursor: pointer;
+}
+
+.host {
     position: relative;
     text-align: center;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
 
-.host-image{
+.host-image {
     border-radius: 12px;
     width: 90%;
 }
 
-.host-button{
+.host-button {
     position: absolute;
     top: 80.5%;
     left: 9.8%;
@@ -18,71 +412,72 @@
     height: 7.3%;
     border-radius: 4px;
     background: white;
-    font-size: 1.0vw;
+    font-size: 1vw;
     padding: 0;
     border-width: 0px;
 }
 
-.host-button:hover{
+.host-button:hover {
     background-color: #d3d3d3;
     cursor: pointer;
 }
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-.notosanskr * { 
- font-family: 'Noto Sans KR', sans-serif;
+.notosanskr * {
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 @font-face {
-    font-family: 'MinSans-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Bold.woff') format('woff');
+    font-family: "MinSans-Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Bold.woff")
+        format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
-footer{
+footer {
     background-color: #f7f7f7;
     margin: auto 0;
 }
 
-.urls{
+.urls {
     text-align: left;
     margin-top: 2.5%;
     padding-top: 2.5%;
     font-size: 80%;
 }
 
-.urls-table{
+.urls-table {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     height: 150%;
     padding-bottom: 2.5%;
-    border-bottom:1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
     font-size: 13.5px;
 }
 
-th{
+th {
     height: 30px;
-    font-family: 'MinSans-Bold';
+    font-family: "MinSans-Bold";
 }
 
-.urls-table-body{
+.urls-table-body {
     height: 30px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
-.urls-table-body td{
+.urls-table-body td {
     width: 22.5%;
     height: 30px;
 }
 
-.urls-table-body-hover:hover{
+.urls-table-body-hover:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.copyright{
+.copyright {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
@@ -90,63 +485,39 @@ th{
     justify-content: space-between;
 }
 
-.copyright-table{
+.copyright-table {
     font-size: 14.5px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
-.copyright-table .copyright-table-hover:hover{
+.copyright-table .copyright-table-hover:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.hyperlink{
+.hyperlink {
     display: flex;
     gap: 2.5%;
 }
 
-#dummy{
+#dummy {
     width: 72%;
 }
 
-.universal{
+.universal {
     width: 105%;
     height: auto;
 }
 
-.universal:hover{
+.universal:hover {
     cursor: pointer;
 }
 
-.sns{
+.sns {
     width: 105%;
     height: auto;
 }
 
-.sns:hover{
+.sns:hover {
     cursor: pointer;
 }
-
-/*
-.hyperlink{
-    display: flex;
-    gap:12px;
-}
-
-.universal{
-    width: 100px;
-    height: auto;
-}
-
-.universal:hover{
-    cursor: pointer;
-}
-
-.sns{
-    width: 30px;
-    height: auto;
-}
-
-.sns:hover{
-    cursor: pointer;
-}*/
