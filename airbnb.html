@@ -1,111 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airbnb</title>
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
-</head>
-<body topmargin="0"  leftmargin="0" marginwidth="0" marginheight="0">
-    <section class="host">
-        <picture>
-            <img src="/image/hosting.png" class="host-image" alt=""/>
-            <button class="host-button" type="button">슈퍼호스트에게 물어보세요</button>
-        </picture>
-    </section>
-    <footer class="footer">
-        <section class="urls">
-            <table class="urls-table" height="100">
-                <thead>
-                    <tr algin="left">
-                        <th>에어비엔비 지원</th>
-                        <th>커뮤니티</th>
-                        <th>호스팅</th>
-                        <th>소개</th>
-                    </tr>
-                </thead>
-                <tbody class="urls-table-body">
-                    <tr>
-                        <td class="urls-table-body-hover">도움말 센터</td>
-                        <td class="urls-table-body-hover">Airbnb.org: 재난 구호 숙소</td>
-                        <td class="urls-table-body-hover">호스팅 시작하기</td>
-                        <td class="urls-table-body-hover">뉴스룸</td>
-                    </tr>
-                    <tr>
-                        <td class="urls-table-body-hover">안전 정보</td>
-                        <td class="urls-table-body-hover">아프간 난민 지원</td>
-                        <td class="urls-table-body-hover">에어커버: 호스트를 위한 보호 프로그램</td>
-                        <td class="urls-table-body-hover">새로운 기능에 대해 알아보기</td>
-                    </tr>
-                    <tr>
-                        <td class="urls-table-body-hover">예약 취소 옵션</td>
-                        <td class="urls-table-body-hover">차별 철폐를 위한 노력</td>
-                        <td class="urls-table-body-hover">호스팅 자료 둘러보기</td>
-                        <td class="urls-table-body-hover">에어비엔비 공동창업자의 메시지</td>
-                    </tr>
-                    <tr>
-                        <td class="urls-table-body-hover">에어비엔비의 코로나19 대응 방안</td>
-                        <td></td>
-                        <td class="urls-table-body-hover">커뮤니티 포럼 방문하기</td>
-                        <td class="urls-table-body-hover">채용정보</td>
-                    </tr>
-                    <tr>
-                        <td class="urls-table-body-hover">장애인 지원</td>
-                        <td></td>
-                        <td class="urls-table-body-hover">책임감 있는 호스팅</td>
-                        <td class="urls-table-body-hover">투자자 정보</td>
-                    </tr>
-                    <tr>
-                        <td class="urls-table-body-hover">이웃 민원 신고</td>
-                        <td></td>
-                        <td></td>
-                        <td class="urls-table-body-hover">에어비엔비 Luxe</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="copyright">
-            <table class="copyright-table">
-                <tr>
-                    <td>© 2022 Airbnb, Inc.</td>
-                    <td>·</td>
-                    <td class="copyright-table-hover">개인정보 처리방침</td>
-                    <td >·</td>
-                    <td class="copyright-table-hover">이용약관</td>
-                    <td>·</td>
-                    <td class="copyright-table-hover">사이트맵</td>
-                    <td>·</td>
-                    <td class="copyright-table-hover">한국의 변경된 환불 정책</td>
-                    <td>·</td>
-                    <td class="copyright-table-hover">회사 세부정보</td>
-                </tr>
-            </table>
-            <div class="hyperlink">
-                <div id="dummy"></div>
-                <picture>
-                    <img src="/image/korean.png" class="universal" alt=""/>
-                </picture>
-                <picture>
-                    <img src="/image/krw.png" class="universal" alt=""/>
-                </picture>
-                <picture>
-                    <img src="/image/facebook.png" class="sns" alt=""/>
-                </picture>
-                <picture>
-                   <img src="/image/twitter.png" class="sns" alt=""/>
-                </picture>
-                <picture>
-                    <img src="/image/instagram.png" class="sns" alt=""/>
-                </picture>
-                <picture>
-                    <img src="/image/blog.png" class="sns" alt=""/>
-                </picture>
-                <picture>
-                    <img src="/image/post.png" class="sns" alt=""/>
-                </picture>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
+        <title>에어비앤비: 휴가용 임대 숙소, 통나무집, 비치 하우스, 독특한 숙소 및 체험 - 에어비앤비</title>
+    </head>
+    <body>
+        <header>
+            <div class="corona">
+                에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.
             </div>
+            <div class="banner">
+                <div class="element logo"><img src="airbnb.png" />airbnb</div>
+                <div class="element select">
+                    <div id="select1">숙소</div>
+                    <div id="select2">체험</div>
+                    <div id="select3">온라인 체험</div>
+                </div>
+                <div class="element my_menu">
+                    <div class="host">호스트 되기</div>
+                    <img class="language" src="language.png" />
+                    <div class="mypage">
+                        <img class="menu" src="menu.png" />
+                        <img class="user" src="user.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="information">
+                <div class="item location">
+                    위치<br />
+                    <input
+                        type="text"
+                        name="where"
+                        value="어디로 여행가세요?"
+                    />
+                </div>
+                <div class="item">
+                    <div class="check-in">체크인</div>
+                    <div class="when">날짜 입력</div>
+                </div>
+                <div class="item">
+                    <div class="check-out">체크아웃</div>
+                    <div class="when">날짜 입력</div>
+                </div>
+                <div class="item">
+                    <div class="guests">인원</div>
+                    <div class="plus">게스트 추가</div>
+                </div>
+                <div class="item search"><img src="search.png" /></div>
+            </div>
+        </header>
+        <div class="black-background">
+            <div class="pink-banner">
+                <div class="text0">
+                    10만 명에 달하는 우크라이나 피란민에게 임시
+                    숙소를 제공해주세요
+                </div>
+                <div class="specific">자세히 알아보기</div>
+            </div>
+        </div>
+        <div class="flexible-search">
+            <div class="tent"><img src="tent.png" /></div>
+            <div class="text1">호기심을 자극하는 숙소로 떠나보세요</div>
+            <div class="text2">유연한 검색</div>
+        </div>
+        <div class="idea">
+            <h2>설레는 다음 여행을 위한 아이디어</h2>
+            <div class="idea-card">
+                <div class="city-card">
+                    <img
+                        src="https://a0.muscache.com/im/pictures/19d4c139-3615-4440-b5e3-55ee3f87e240.jpg?im_w=320"
+                        class="city-image"
+                    />
+                    <div class="inner-seoul">
+                        <div class="inner-content">
+                            <p class="city-name">서울</p>
+                            <p class="city-distance">2km 거리</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <img
+                        src="https://a0.muscache.com/im/pictures/55250d06-92f1-4d22-be89-9f20f2bcb1fc.jpg?im_w=320"
+                        class="city-image"
+                    />
+                    <div class="inner-incheon">
+                        <div class="inner-content">
+                            <p class="city-name">인천</p>
+                            <p class="city-distance">29km 거리</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <img
+                        src="https://a0.muscache.com/im/pictures/e25ccbca-1515-4510-baa6-9d2c473865dc.jpg?im_w=320"
+                        class="city-image"
+                    />
+                    <div class="inner-daegu">
+                        <div class="inner-content">
+                            <p class="city-name">대구</p>
+                            <p class="city-distance">237km 거리</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <img
+                        src="https://a0.muscache.com/im/pictures/ffde0c4b-1889-4d11-bb00-41411d34fdfc.jpg?im_w=320"
+                        class="city-image"
+                    />
+                    <div class="inner-daejeon">
+                        <div class="inner-content">
+                            <p class="city-name">대전</p>
+                            <p class="city-distance">140km 거리</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="look-around">
+            <h2>에어비앤비 체험 둘러보기</h2>
+            <div class="look-around-card">
+                <div class="while-travel">
+                    <div class="look-around-card-inner">
+                        <span class="while-travel">
+                            여행 중 만나는<br />이색적인 즐길 거리
+                        </span>
+                        <div class="exp-button">
+                            <span class="inner-button">체험</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="at-home">
+                    <div class="look-around-card-inner">
+                        <span class="at-home">
+                            집에서 만나는<br />다양한 즐길 거리
+                        </span>
+                        <div class="exp-button">
+                            <span class="inner-button">온라인 체험</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="host-bottom">
+            <picture>
+                <img src="/image/hosting.png" class="host-image" alt="" />
+                <button class="host-button" type="button">
+                    슈퍼호스트에게 물어보세요
+                </button>
+            </picture>
         </section>
-    </footer>
-</body>
+        <footer class="footer">
+            <section class="urls">
+                <table class="urls-table" height="100">
+                    <thead>
+                        <tr algin="left">
+                            <th>에어비엔비 지원</th>
+                            <th>커뮤니티</th>
+                            <th>호스팅</th>
+                            <th>소개</th>
+                        </tr>
+                    </thead>
+                    <tbody class="urls-table-body">
+                        <tr>
+                            <td class="urls-table-body-hover">도움말 센터</td>
+                            <td class="urls-table-body-hover">
+                                Airbnb.org: 재난 구호 숙소
+                            </td>
+                            <td class="urls-table-body-hover">
+                                호스팅 시작하기
+                            </td>
+                            <td class="urls-table-body-hover">뉴스룸</td>
+                        </tr>
+                        <tr>
+                            <td class="urls-table-body-hover">안전 정보</td>
+                            <td class="urls-table-body-hover">
+                                아프간 난민 지원
+                            </td>
+                            <td class="urls-table-body-hover">
+                                에어커버: 호스트를 위한 보호 프로그램
+                            </td>
+                            <td class="urls-table-body-hover">
+                                새로운 기능에 대해 알아보기
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="urls-table-body-hover">
+                                예약 취소 옵션
+                            </td>
+                            <td class="urls-table-body-hover">
+                                차별 철폐를 위한 노력
+                            </td>
+                            <td class="urls-table-body-hover">
+                                호스팅 자료 둘러보기
+                            </td>
+                            <td class="urls-table-body-hover">
+                                에어비엔비 공동창업자의 메시지
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="urls-table-body-hover">
+                                에어비엔비의 코로나19 대응 방안
+                            </td>
+                            <td></td>
+                            <td class="urls-table-body-hover">
+                                커뮤니티 포럼 방문하기
+                            </td>
+                            <td class="urls-table-body-hover">채용정보</td>
+                        </tr>
+                        <tr>
+                            <td class="urls-table-body-hover">장애인 지원</td>
+                            <td></td>
+                            <td class="urls-table-body-hover">
+                                책임감 있는 호스팅
+                            </td>
+                            <td class="urls-table-body-hover">투자자 정보</td>
+                        </tr>
+                        <tr>
+                            <td class="urls-table-body-hover">
+                                이웃 민원 신고
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td class="urls-table-body-hover">
+                                에어비엔비 Luxe
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="copyright">
+                <table class="copyright-table">
+                    <tr>
+                        <td>© 2022 Airbnb, Inc.</td>
+                        <td>·</td>
+                        <td class="copyright-table-hover">개인정보 처리방침</td>
+                        <td>·</td>
+                        <td class="copyright-table-hover">이용약관</td>
+                        <td>·</td>
+                        <td class="copyright-table-hover">사이트맵</td>
+                        <td>·</td>
+                        <td class="copyright-table-hover">
+                            한국의 변경된 환불 정책
+                        </td>
+                        <td>·</td>
+                        <td class="copyright-table-hover">회사 세부정보</td>
+                    </tr>
+                </table>
+                <div class="hyperlink">
+                    <div id="dummy"></div>
+                    <picture>
+                        <img src="/image/korean.png" class="universal" alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/image/krw.png" class="universal" alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/image/facebook.png" class="sns" alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/image/twitter.png" class="sns" alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/image/instagram.png" class="sns" alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/image/blog.png" class="sns" alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/image/post.png" class="sns" alt="" />
+                    </picture>
+                </div>
+            </section>
+        </footer>
+    </body>
 </html>
