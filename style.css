@@ -82,7 +82,7 @@ body {
 
 .mypage:hover,
 .select:hover,
-.logo:hover{
+.logo:hover {
     cursor: pointer;
 }
 
@@ -100,12 +100,13 @@ body {
 
 #select1 {
     text-decoration: underline;
-    text-underline-position:under;
+    text-underline-position: under;
 }
 
-#select2:hover, #select3:hover {
+#select2:hover,
+#select3:hover {
     text-decoration: underline;
-    text-underline-position:under;
+    text-underline-position: under;
     color: lightgray;
 }
 
@@ -260,7 +261,7 @@ body {
     border-radius: 50px;
 }
 
-.text2:hover{
+.text2:hover {
     cursor: pointer;
 }
 
@@ -432,15 +433,31 @@ div.exp-button {
     margin-bottom: 2.5%;
 }
 
+.host-bottom img {
+    width: 90%;
+}
+
 .host-image {
     border-radius: 12px;
     width: 90%;
 }
 
+.question {
+    color: white;
+    position: absolute;
+    font-size: 90px;
+    font-weight: bold;
+    top: 10.5%;
+    left: 9.8%;
+    width: 45%;
+    height: 7.3%;
+    text-align: left;
+}
+
 .host-button {
     position: absolute;
     top: 80.5%;
-    left: 9,8%;
+    left: 9.8%;
     width: 14.8%;
     height: 7.3%;
     border-radius: 4px;
@@ -451,7 +468,7 @@ div.exp-button {
 }
 
 .host-button:hover,
-div.exp-button:hover {
+.exp-button:hover {
     background-color: #d3d3d3;
     cursor: pointer;
 }
