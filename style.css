@@ -171,7 +171,7 @@ body {
 }
 
 .tent {
-    height: 100vh;
+    height: max-content;
     background: linear-gradient(black 50%, white 50%);
 }
 
@@ -193,7 +193,7 @@ body {
 
 .flexible-search {
     width: 100%;
-    height: 800px;
+    height: max-content;
     border-radius: 20px;
     position: relative;
 }
@@ -254,7 +254,7 @@ input {
 
 .idea,
 .look-around {
-    margin: 60px 5%;
+    margin: 60px 5% 0px;
     width: 90%;
     height: 100%;
 }
@@ -262,6 +262,7 @@ input {
 h2 {
     font-size: 25px;
     padding-bottom: 24px;
+    margin: 0px;
 }
 
 .idea-card,
@@ -273,7 +274,7 @@ h2 {
 }
 
 .city-card {
-    height: 420px;
+    position: relative;
     width: 23.5%;
     display: flex;
     flex-direction: column;
@@ -286,7 +287,7 @@ h2 {
 }
 
 .city-image {
-    height: 50%;
+    height: auto;
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -295,17 +296,18 @@ h2 {
 .inner-seoul {
     background-color: #d93b30;
     color: #ffffff;
-    height: 50%;
-    width: 100%;
+    height: 0;
+    padding-bottom: 66.6%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
+
 .inner-incheon {
     background-color: #bc1a6e;
     color: #ffffff;
-    height: 50%;
-    width: 100%;
+    height: 0;
+    padding-bottom: 66.6%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -313,8 +315,8 @@ h2 {
 .inner-daegu {
     background-color: #de3151;
     color: #ffffff;
-    height: 50%;
-    width: 100%;
+    height: 0;
+    padding-bottom: 66.6%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -322,20 +324,25 @@ h2 {
 .inner-daejeon {
     background-color: #cc2d4a;
     color: #ffffff;
-    height: 50%;
-    width: 100%;
+    height: 0;
+    padding-bottom: 66.6%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 .inner-content {
-    padding: 20px 16px 16px;
+    padding: 20px 16px 16px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .city-name {
+    width: max-content;
     font-size: 23px;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .city-distance {
@@ -343,20 +350,23 @@ h2 {
 }
 
 .while-travel {
-    background: url("https://a0.muscache.com/im/pictures/3290306e-8e26-4c77-a96a-777e554c5222.jpg?im_w=320");
+    background-image: url("https://a0.muscache.com/im/pictures/3290306e-8e26-4c77-a96a-777e554c5222.jpg?im_w=320");
     background-size: cover;
-    height: 500px;
+    height: 0;
     width: 49%;
+    padding-bottom: 65%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .at-home {
     background: url("https://a0.muscache.com/im/pictures/0fa7e0a7-c3c2-410a-b5c0-567cfca193cb.jpg?im_w=320");
     background-size: cover;
-    height: 500px;
     width: 49%;
+    height: 0;
+    padding-bottom: 65%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
