@@ -5,7 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <title>에어비앤비</title>
+        <link
+            rel="shortcut icon"
+            sizes="16x16"
+            type="image/x-icon"
+            href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico"
+        />
+        <title>
+            에어비앤비: 휴가용 임대 숙소, 통나무집, 비치 하우스, 독특한 숙소 및
+            체험 - 에어비앤비
+        </title>
     </head>
     <body>
         <header>
@@ -15,13 +24,13 @@
             <div class="banner">
                 <div class="element logo"><img src="airbnb.png" />airbnb</div>
                 <div class="element select">
-                    <div>숙소</div>
-                    <div>체험</div>
-                    <div>온라인 체험</div>
+                    <div id="select1">숙소</div>
+                    <div id="select2">체험</div>
+                    <div id="select3">온라인 체험</div>
                 </div>
                 <div class="element my_menu">
                     <div class="host">호스트 되기</div>
-                    <img src="language.png" />
+                    <img class="language" src="language.png" />
                     <div class="mypage">
                         <img class="menu" src="menu.png" />
                         <img class="user" src="user.png" />
@@ -76,12 +85,8 @@
                     />
                     <div class="inner-seoul">
                         <div class="inner-content">
-                            <div class="city-name">
-                                <span>서울</span>
-                            </div>
-                            <div class="city-distance">
-                                <span>2km 거리</span>
-                            </div>
+                            <p class="city-name">서울</p>
+                            <p class="city-distance">2km 거리</p>
                         </div>
                     </div>
                 </div>
@@ -92,12 +97,8 @@
                     />
                     <div class="inner-incheon">
                         <div class="inner-content">
-                            <div class="city-name">
-                                <span>인천</span>
-                            </div>
-                            <div class="city-distance">
-                                <span>29km 거리</span>
-                            </div>
+                            <p class="city-name">인천</p>
+                            <p class="city-distance">29km 거리</p>
                         </div>
                     </div>
                 </div>
@@ -108,12 +109,8 @@
                     />
                     <div class="inner-daegu">
                         <div class="inner-content">
-                            <div class="city-name">
-                                <span>대구</span>
-                            </div>
-                            <div class="city-distance">
-                                <span>237km 거리</span>
-                            </div>
+                            <p class="city-name">대구</p>
+                            <p class="city-distance">237km 거리</p>
                         </div>
                     </div>
                 </div>
@@ -124,12 +121,8 @@
                     />
                     <div class="inner-daejeon">
                         <div class="inner-content">
-                            <div class="city-name">
-                                <span>대전</span>
-                            </div>
-                            <div class="city-distance">
-                                <span>140km 거리</span>
-                            </div>
+                            <p class="city-name">대전</p>
+                            <p class="city-distance">140km 거리</p>
                         </div>
                     </div>
                 </div>
@@ -160,9 +153,16 @@
                 </div>
             </div>
         </div>
-        <section class="host">
+        <section class="host-bottom">
+            <div class="question">
+                호스팅에 관해<br />
+                궁금하신 점이<br />
+                있나요?
+            </div>
             <picture>
-                <img src="/image/hosting.png" class="host-image" alt="" />
+                <img
+                src=https://a0.muscache.com/im/pictures/0528b0f7-4c0c-47bc-9786-d91454f531ba.jpg?im_w=1920
+                class="host-image" alt="" />
                 <button class="host-button" type="button">
                     슈퍼호스트에게 물어보세요
                 </button>
