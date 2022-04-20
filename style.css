@@ -18,6 +18,11 @@ body {
     background-color: black;
 }
 
+.corona:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
 .banner {
     color: white;
     background-color: black;
@@ -75,13 +80,16 @@ body {
     height: 20px;
 }
 
-.host:hover,
-.my_menu img:hover,
 .mypage:hover,
 .select:hover,
-.logo:hover,
-.specific {
+.logo:hover {
     cursor: pointer;
+}
+
+.language:hover,
+.host:hover {
+    cursor: pointer;
+    background-color: rgb(29, 28, 28);
 }
 
 .select {
@@ -90,9 +98,21 @@ body {
     justify-content: space-around;
 }
 
+#select1 {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+#select2:hover,
+#select3:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: lightgray;
+}
+
 .information {
+    margin: 0 20%;
     display: flex;
-    margin: 0px 20%;
     justify-content: center;
     background-color: white;
     color: black;
@@ -108,7 +128,12 @@ body {
     text-align: left;
     padding: 2% 2%;
     justify-content: center;
-    text-align: left;
+}
+
+.div-line {
+    border-left: 1px solid rgba(200, 200, 200, 50);
+    height: 30px;
+    width: 1px;
 }
 
 .location,
@@ -133,17 +158,21 @@ body {
     cursor: pointer;
 }
 
-.item:nth-child(1) {
-    flex-grow: 1;
+.search:hover {
+    background-color: #a91d4a;
 }
-.item:nth-child(2) {
+
+.item:nth-child(1) {
     flex-grow: 1;
 }
 .item:nth-child(3) {
     flex-grow: 1;
 }
-.item:nth-child(4) {
-    flex-grow: 2;
+.item:nth-child(5) {
+    flex-grow: 1;
+}
+.item:nth-child(7) {
+    flex-grow: 1;
 }
 
 .location {
@@ -165,13 +194,13 @@ body {
     background-color: rgb(255, 56, 92);
     padding: 5% 0%;
     border-radius: 15px;
-    font-size: 52px;
-    font-weight: bold;
+    font-size: 47px;
+    font-weight: 550;
     color: white;
 }
 
 .tent {
-    height: 100vh;
+    height: max-content;
     background: linear-gradient(black 50%, white 50%);
 }
 
@@ -185,6 +214,11 @@ body {
     border-radius: 10px;
 }
 
+.specific:hover {
+    cursor: pointer;
+    border: solid 2px white;
+}
+
 .text0 {
     background-color: rgb(255, 56, 92);
     width: 65%;
@@ -193,7 +227,7 @@ body {
 
 .flexible-search {
     width: 100%;
-    height: 800px;
+    height: max-content;
     border-radius: 20px;
     position: relative;
 }
@@ -211,7 +245,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    font-size: 30px;
+    font-size: 45px;
+    font-weight: bold;
     background-color: transparent;
     color: white;
 }
@@ -221,14 +256,19 @@ body {
     top: 80%;
     left: 50%;
     z-index: 1;
-    padding: 15px 20px;
+    padding: 19px 35px;
     margin-top: auto;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
     background-color: transparent;
     transform: translate(-50%, -50%);
     background-color: white;
-    color: violet;
+    color: rgb(130, 22, 130);
     border-radius: 50px;
+}
+
+.text2:hover {
+    cursor: pointer;
 }
 
 input {
@@ -254,13 +294,14 @@ input {
 
 .idea,
 .look-around {
-    margin: 60px 5%;
+    margin: 60px 5% 0px;
     width: 90%;
     height: 100%;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 39px;
+    margin: 0px;
     padding-bottom: 24px;
 }
 
@@ -273,7 +314,7 @@ h2 {
 }
 
 .city-card {
-    height: 420px;
+    position: relative;
     width: 23.5%;
     display: flex;
     flex-direction: column;
@@ -286,7 +327,7 @@ h2 {
 }
 
 .city-image {
-    height: 50%;
+    height: auto;
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -295,8 +336,8 @@ h2 {
 .inner-seoul {
     background-color: #d93b30;
     color: #ffffff;
-    height: 50%;
-    width: 100%;
+    height: 0;
+    padding-bottom: 66.6%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -304,8 +345,8 @@ h2 {
 .inner-incheon {
     background-color: #bc1a6e;
     color: #ffffff;
-    height: 50%;
-    width: 100%;
+    height: 0;
+    padding-bottom: 66.6%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -313,8 +354,8 @@ h2 {
 .inner-daegu {
     background-color: #de3151;
     color: #ffffff;
-    height: 50%;
-    width: 100%;
+    height: 0;
+    padding-bottom: 66.6%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -322,20 +363,25 @@ h2 {
 .inner-daejeon {
     background-color: #cc2d4a;
     color: #ffffff;
-    height: 50%;
-    width: 100%;
+    height: 0;
+    padding-bottom: 66.6%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 .inner-content {
-    padding: 20px 16px 16px;
+    padding: 20px 16px 16px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .city-name {
+    width: max-content;
     font-size: 23px;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .city-distance {
@@ -343,20 +389,23 @@ h2 {
 }
 
 .while-travel {
-    background: url("https://a0.muscache.com/im/pictures/3290306e-8e26-4c77-a96a-777e554c5222.jpg?im_w=320");
+    background-image: url("https://a0.muscache.com/im/pictures/3290306e-8e26-4c77-a96a-777e554c5222.jpg?im_w=320");
     background-size: cover;
-    height: 500px;
+    height: 0;
     width: 49%;
+    padding-bottom: 65%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .at-home {
     background: url("https://a0.muscache.com/im/pictures/0fa7e0a7-c3c2-410a-b5c0-567cfca193cb.jpg?im_w=320");
     background-size: cover;
-    height: 500px;
     width: 49%;
+    height: 0;
+    padding-bottom: 65%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -388,15 +437,15 @@ div.exp-button {
     font-size: 16px;
 }
 
-div.exp-button:hover {
-    cursor: pointer;
-}
-
-.host {
+.host-bottom {
     position: relative;
     text-align: center;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
+}
+
+.host-bottom img {
+    width: 90%;
 }
 
 .host-image {
@@ -404,11 +453,23 @@ div.exp-button:hover {
     width: 90%;
 }
 
+.question {
+    color: white;
+    position: absolute;
+    font-size: 90px;
+    font-weight: bold;
+    top: 10.5%;
+    left: 9.8%;
+    width: 45%;
+    height: 7.3%;
+    text-align: left;
+}
+
 .host-button {
     position: absolute;
     top: 80.5%;
     left: 9.8%;
-    width: 15%;
+    width: 14.8%;
     height: 7.3%;
     border-radius: 4px;
     background: white;
@@ -417,7 +478,8 @@ div.exp-button:hover {
     border-width: 0px;
 }
 
-.host-button:hover {
+.host-button:hover,
+.exp-button:hover {
     background-color: #d3d3d3;
     cursor: pointer;
 }
